@@ -1,1 +1,111 @@
-hello world
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klick的个人博客</title>
+    <style>
+      body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+}
+
+.container {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px;
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.highlight {
+    color: #007BFF;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.count {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+    </style>
+
+</head>
+<body>
+
+    <header>
+        Hello, 大家好这里是Klick的个人博客
+    </header>
+
+    <div class="container">
+        <p>在往后的日子我会将我的一些算法笔记，和Python项目上传。</p>
+        <p>有爬虫，有小系统，有web前端笔记</p>
+        <p>个人是一个不确定方向的Fvv大学生，不知道是
+            在人工智能学习一些框架，做出一些成果还是学习单片机走嵌入式
+            亦或者是走软件开发前后端全栈工程师，啊啊啊啊啊总之很乱很乱~~~~~~~
+        </p>
+        <p>新手小白，请大家多多指教。</p>
+
+        <div class="button-container">
+            <button onclick="incrementCount()">点击增加计数</button>
+            <p class="count" id="countDisplay">0</p>
+        </div>
+    </div>
+
+    <script>
+        let count = 0;
+
+        function incrementCount() {
+            count++;
+            document.getElementById("countDisplay").textContent = count;
+        }
+    </script>
+
+</body>
+</html>
+
