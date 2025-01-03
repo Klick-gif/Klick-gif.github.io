@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klick的个人博客</title>
+    <link rel="stylesheet"  href="styles.css">
+</head>
+<body>
+
+    <header>
+        Hello, 大家好这里是Klick的个人博客
+    </header>
+
+    <div class="container">
+        <p>在往后的日子我会将我的一些算法笔记，和Python项目上传。</p>
+        <p>有爬虫，有小系统，有web前端笔记</p>
+        <p>个人是一个不确定方向的Fvv大学生，不知道是
+            在人工智能学习一些框架，做出一些成果还是学习单片机走嵌入式
+            亦或者是走软件开发前后端全栈工程师，啊啊啊啊啊总之很乱很乱~~~~~~~
+        </p>
+        <hr/>
+        <p>新手小白，请大家多多指教。</p>
+
+        <div class="button-container">
+            <button onclick="incrementCount()">点击支持作者</button>
+            <p class="count" id="countDisplay">0</p>
+        </div>
+    </div>
+        <p>   </p>
+    <div>
+        <img src="2.jpg" alt="阿尼亚惊愕" title="阿尼亚惊愕">
+        <img src="1.JPG" alt="阿尼亚睡衣" title="阿尼亚睡衣">
+        <img src="3.jpg" alt="埃罗芒阿老师" title="埃罗芒阿老师">
+    </div>
+
+    <script>
+        let count = 0;
+
+        function incrementCount() {
+            count++;
+            document.getElementById("countDisplay").textContent = count;
+        }
+    </script>
+
+</body>
+</html>
